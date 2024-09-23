@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donate Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom style for water-like effect */
+    .water-effect {
+      background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+      backdrop-filter: blur(10px); /* Blur effect */
+    }
+    body {
+      background-color: rgb(249, 247, 243); /* Background color */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="water-effect shadow-md sticky top-0 z-50 flex justify-between items-center py-4 px-6">
+    <a href="faq.html" class="text-xl font-bold light-green-100 p-2 rounded-md">Blog</a>
+
+    <!-- logo and title -->
+    <div class="text-center">
+      <img src="image/logo.png" alt="Donate Logo" class="w-8 h-8 inline-block">
+      <h1 class="text-lg font-bold text-green-600 inline-block">Donate Bangladesh</h1>
+    </div>
+    
+    <!-- Account balance -->
+    <div class="flex items-center space-x-2">
+      <img src="image/coin.png" alt="coin icon" class="w-6 h-6">
+      <span id="balance" class="text-black-500 font-semibold">1000 BDT</span> <!-- Initial balance -->
+    </div>
+  </nav>
+
+  <!-- Donation and History Buttons -->
+  <div class="sticky top-16 z-40 water-effect py-4 shadow-md flex justify-center space-x-4">
+    <button id="donationBtn" class="bg-green-500 text-white py-2 px-4 rounded-lg">Donation</button>
+    <button id="historyBtn" class="bg-green-500 text-black py-2 px-4 rounded-lg">History</button>
+  </div>
+
+  
+</body>
+</html>
