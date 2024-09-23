@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Donate Bangladesh</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .accordion {
+      cursor: pointer;
+    }
+    .accordion-content {
+      display: none;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50 flex justify-between items-center py-4 px-6">
+    <a href="faq.html" class="text-green-600 font-semibold">FAQ</a>
+    
+    <div class="text-center">
+      <img src="image/logo.png" alt="Donate Logo" class="w-8 h-8 inline-block">
+      <h1 class="text-lg font-bold text-green-600 inline-block">Donate Bangladesh</h1>
+    </div>
+    
+    <div class="flex items-center space-x-2">
+      <img src="image/coin.png" alt="coin icon" class="w-6 h-6">
+      <span id="balance" class="text-black-500 font-semibold">1000 BDT</span>
+    </div>
+  </nav>
+
+  <!-- FAQ Section -->
+  <div class="container mx-auto py-10">
+    <h2 class="text-2xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="accordion font-semibold w-full text-left">1. How can I donate?</button>
+        <div class="accordion-content text-gray-600">
+          <p>You can donate by selecting a cause and entering your donation amount in the donation section.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="accordion font-semibold w-full text-left">2. Is my donation secure?</button>
+        <div class="accordion-content text-gray-600">
+          <p>Yes, we use secure payment methods to ensure your donation is safe.</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md p-6">
+        <button class="accordion font-semibold w-full text-left">3. Can I track my donation?</button>
+        <div class="accordion-content text-gray-600">
+          <p>Yes, you can view your donation history in the history section of our website.</p>
+        </div>
+      </div>
+
+      <!-- Add more FAQs as needed -->
+      
+    </div>
+  </div>
+
+  <script>
+    // Accordion functionality
+    const accordions = document.querySelectorAll('.accordion');
+    accordions.forEach(acc => {
+      acc.addEventListener('click', () => {
+        const content = acc.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+  <script src="app.js"></script>
+</body>
+</html>
